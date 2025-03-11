@@ -1,0 +1,19 @@
+<div class="content">
+  <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+    <app-form-textfield
+      label="Enter email"
+      inputId="email"
+      formControlName="email"
+      [customErrorMessages]="emailErrors"
+    ></app-form-textfield>
+
+    <app-form-textfield
+      label="Enter password"
+      inputId="password"
+      type="password"
+      formControlName="password"
+    />
+
+    <button>Login</button>
+  </form>
+</div>

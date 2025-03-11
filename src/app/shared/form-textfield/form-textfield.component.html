@@ -1,0 +1,24 @@
+<div class="input-container" *ngIf="control">
+  <input
+    [required]="isRequired"
+    [type]="type"
+    [id]="inputId"
+    [formControl]="control"
+    class="form-control"
+    [placeholder]="label"
+  />
+  <label
+    [for]="inputId"
+    class="label"
+    *ngIf="label"
+    [class.required]="isRequired"
+    >{{ label }}</label
+  >
+
+  <app-form-textfield-validation-errors
+    *ngIf="control.touched && control.dirty"
+    [customErrorMessages]="customErrorMessages"
+    [errors]="control.errors"
+  >
+  </app-form-textfield-validation-errors>
+</div>

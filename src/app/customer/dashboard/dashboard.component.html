@@ -1,0 +1,11 @@
+<div class="content" *ngIf="loginData$ | async as loginData">
+  <h1>Dashboard</h1>
+  <div class="loginData">
+    <div class="login">
+      <span class="header">Login:</span> {{ loginData.login }}
+    </div>
+    <div class="login">
+      <span class="header">Password:</span> {{ loginData.password }}
+    </div>
+  </div>
+</div>

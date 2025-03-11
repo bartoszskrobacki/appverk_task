@@ -1,0 +1,33 @@
+.content {
+  display: flex;
+  max-width: 550px;
+  margin: auto;
+  background: white;
+}
+
+form {
+  width: 100%;
+  position: relative;
+  padding: 77px 61px 66px;
+}
+
+button {
+  border: none;
+  width: 100%;
+  height: 49px;
+  margin-top: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #99ccff;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Muli-SemiBold";
+  font-size: 15px;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
