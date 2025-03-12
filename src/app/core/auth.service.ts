@@ -1,8 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { inject, Injectable, PLATFORM_ID } from '@angular/core';
 
-type LoginCredentails = { password: string; login: string };
-
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   platformId = inject(PLATFORM_ID);
